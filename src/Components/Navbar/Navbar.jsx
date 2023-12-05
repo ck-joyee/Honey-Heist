@@ -3,7 +3,7 @@ import logo from "../../assets/Images/logo hh.png"
 
 const Navbar = () => {
   return (
-    <div className="bg-orange-100">
+    <div className="bg-orange-100 opacity-80">
       <div className="navbar">
       <div className="flex-1">
       <img src={logo}  className="w-1/6"/>
