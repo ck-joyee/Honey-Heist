@@ -1,19 +1,46 @@
 import React from "react";
-import logo from "../../assets/Images/logo hh.png"
+import logo from "../../assets/Images/logo hh.png";
 
 const Navbar = () => {
   return (
-    <div className="bg-orange-100 opacity-80">
-      <div className="navbar">
-      <div className="flex-1">
-      <img src={logo}  className="w-1/6"/>
-      </div>
+    <div className="bg-orange-100 lg: opacity-80">
+      <div className="navbar ">
+        <div className="flex-1 me-16">
+          <img src={logo} className="w-1/3" />
+        </div>
+        <div class="flex-auto">
+          <a
+            href="#"
+            class=" text-black rounded-md px-3 py-2 text-sm font-medium hover:bg-orange-300"
+            aria-current="page"
+          >
+            Home
+          </a>
+          <a
+            href="#"
+            class="text-black rounded-md px-3 py-2 text-sm font-medium hover:bg-orange-300"
+          >
+            Shop
+          </a>
+          <a
+            href="#"
+            class="text-black rounded-md px-3 py-2 text-sm font-medium hover:bg-orange-300"
+          >
+            About
+          </a>
+          <a
+            href="#"
+            class="text-black rounded-md px-3 py-2 text-sm font-medium hover:bg-orange-300"
+          >
+            Contact
+          </a>
+        </div>
         <div className="flex-none">
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle"
+              className="btn btn-ghost btn-circle hover:bg-orange-300"
             >
               <div className="indicator">
                 <svg
@@ -35,7 +62,7 @@ const Navbar = () => {
             </div>
             <div
               tabIndex={0}
-              className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-orange-100 shadow"
+              className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-orange-300 shadow"
             >
               <div className="card-body">
                 <span className="font-bold text-xl">0 Items</span>
@@ -52,17 +79,15 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle avatar"
+              className="btn btn-ghost btn-circle avatar hover:bg-orange-300"
             >
               <div className="w-10 rounded-full ">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN5pRYkNO_iSx4tQjp_z9Nqdoiwf8ztHzQlg&usqp=CAU"
-                />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN5pRYkNO_iSx4tQjp_z9Nqdoiwf8ztHzQlg&usqp=CAU" />
               </div>
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-orange-300 rounded-box w-52"
             >
               <li>
                 <a className="justify-between">
